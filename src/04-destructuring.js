@@ -1,3 +1,7 @@
+/***********************/
+// destructuring //
+/***********************/
+
 const car = {
   brand: "mazda",
   model: "cx-5",
@@ -13,13 +17,20 @@ const bike = {
 }
 
 const vehicleInfo = (vehicle) => {
-  const {brand, model} = vehicle;
+  const {brand, model} = vehicle;  /// <--- destructuring
   console.log(`brand: ${brand}, model: ${model}`);
 }
-//const vehicleInfo = ({brand, model}) => console.log(`brand: ${brand}, model: ${model}`);
-
 vehicleInfo(car);
 
+
+/***********************/
+//destructuring parameters
+/***********************/
+//const vehicleInfo = ({brand, model}) => console.log(`brand: ${brand}, model: ${model}`);
+
+/***********************/
+//destructuring arrays
+/***********************/
 // const cars = [{brand: 'mazda', model: 'cx-5'}, {brand: 'tesla', model: 's'}, {brand: 'volvo', model: 'v40'}];
 // const [riskoker, , svenske] = cars;
 // console.log(`riskoker er: ${riskoker.brand}`);

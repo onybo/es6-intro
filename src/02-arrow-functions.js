@@ -1,21 +1,19 @@
 'use strict'
 
-// var add2 = function (x) {
-//   return x + 2;
-// }
+var add2 = function (x) {
+  return x + 2;
+}
 
-// const add2 = x => x + 2
+const add3 = x => x + 3;
 
-// const add2 = (x, y) => (
-//    { x: x+2, y: y +2 } 
-// );
+const add = (x, y) => x + y; 
 
-// const add_es6_3 = (x, y) => x + y;
+const add2xy = (x, y) => (
+   { x: x+2, y: y +2 } 
+);
 
+debugger;
 
-
-// add(1,2);
-let z = add2(4,5);
 
 
 function Person() {
@@ -23,15 +21,16 @@ function Person() {
   console.log("age is initialized to: " + this.age);
   
   setInterval(function (){
-    console.log("age is now: " + ++this.age);
+    console.log(`age is now: ${++this.age}`);
   }, 1000);
 }
 
-// function Person() {
+// function Person() { //constructor must be old style function
 //   this.age = 0;
-//   console.log("age is initialized to: " + this.age);
+//   console.log(`age is initialized to: ${this.age}`);
   
-//   setInterval(() => console.log("age is now: " + ++this.age), 1000);
+//   setInterval(() => console.log(`age is now: ${++this.age}`), 1000);
 // }
 
 let p = new Person();
+

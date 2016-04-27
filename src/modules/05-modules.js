@@ -1,5 +1,5 @@
-import { add, sub } from "./a-module"
-import something from "./b-module"
+import { add, sub } from "./a-module" //picking two imports from a module
+//import something from "./b-module"  //default import
 //import * as stuff from "./a-module"
 
 console.log(`add: ${add(10, 5)}`);
